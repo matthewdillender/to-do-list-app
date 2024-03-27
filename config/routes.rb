@@ -9,7 +9,12 @@ Rails.application.routes.draw do
   # root "posts#index"
 
   post "/users" => "users#create"
-
+  get "/users" => "users#index"
+  get "/users/:id" => "users#show"
+  patch "/users/:id" => "users#update"
+  delete "/users/:id" => "users#destroy"
+  
+  
   post "/sessions" => "sessions#create"
 
   get "/items" => "items#index"
