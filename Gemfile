@@ -1,4 +1,5 @@
 source "https://rubygems.org"
+require "rack/cors" 
 
 ruby "3.2.2"
 
@@ -64,4 +65,6 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
   gem "selenium-webdriver"
+  gem "rack-cors"
+  gem "jwt"
 end
