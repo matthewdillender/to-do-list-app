@@ -9,20 +9,19 @@
 #   end
 
 
-List.create(name:"Groceries", user_id: 1, completed: false )
-List.create(name:"Chores", user_id: 2, completed: false )
-List.create(name:"Projects", user_id: 3, completed: false )
+List.create(list_name:"Groceries", user_id: 1, completed: false )
+List.create(list_name:"Chores", user_id: 2, completed: false )
+List.create(list_name:"Projects", user_id: 3, completed: false )
 
+Item.create(name:"Bread", list_id: 4, completed: false)
+Item.create(name:"Cheese", list_id: 4, completed: false)
+Item.create(name:"Mustard", list_id: 4, completed: false)
 
-Item.create(name:"Bread", list_id: 1, completed: false)
-Item.create(name:"Cheese", list_id: 1, completed: false)
-Item.create(name:"Mustard", list_id: 1, completed: false)
+Item.create(name:"Dishes", list_id: 5, completed: false)
+Item.create(name:"Laundry", list_id: 5, completed: false)
+Item.create(name:"Recycling", list_id: 5, completed: false)
 
-Item.create(name:"Dishes", list_id: 2, completed: false)
-Item.create(name:"Laundry", list_id: 2, completed: false)
-Item.create(name:"Recycling", list_id: 2, completed: false)
-
-Item.create(name:"To Do List App", list_id: 3, completed: false)
-Item.create(name:"Personal Blog", list_id: 3, completed: false)
-Item.create(name:"E-Commerce Store", list_id: 3, completed: false)
+Item.create(name:"To Do List App", list_id: 6, completed: false)
+Item.create(name:"Personal Blog", list_id: 6, completed: false)
+Item.create(name:"E-Commerce Store", list_id: 6, completed: false)
 
