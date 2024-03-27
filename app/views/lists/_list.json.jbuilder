@@ -1,2 +1,10 @@
-json.extract! list, :id, :created_at, :updated_at
-json.url list_url(list, format: :json)
+
+
+json.id list.id
+json.name list.name
+json.completed list.completed
+
+json.items list.items do |item|
+  json.id item.id
+  json.name item.name
+end
